@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --bg-primary: #eceaff;
+    --color: #525252;
+    --bg-secondary: #1a1a1a;
+    --white-color: #fff;
+    --hover-color: #f1f1f1;
+    --black-color: #000;
+    --light-gray-color: #ccc;
+    --icons-bg: #e5e5e5;
+  }
+  
+  .mynavbar-toggler {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .users-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+  
+  .my-nav-link {
+    color: var(--black-color);
+    margin: 0 10px;
+    display: flex;
+  }
+  
+  .my-nav-link i{
+    width: 25px;
+    height:  25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--light-gray-color);
+    padding: 8px;
+    margin: 0px 5px;
+  }
+  .sub-menu-wrapper {
+    position: absolute;
+    top: 100%;
+    right: 1%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+  
+  .medium-screen .sub-menu-wrapper {
+    position: absolute;
+    top: 100%;
+    right: 1%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+  .open-meun {
+    max-height: 400px;
+    display: block;
+  }
+  
+  
+  .sub-menu {
+    background-color: var(--white-color);
+    padding: 15px;
+  }
+  
+  .user-profile {
+    width: 5vw;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .sub-menu hr {
+    background-color: var(--light-gray-color);
+    height: 1px;
+  }
+  
+  .sub-menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color);
+    margin: 12px 0;
+  }
+  
+  .sub-menu-link p {
+    margin: 0 10px;
+  }
+  
+  .sub-menu-link img {
+    width: 40px;
+    height: 40px;
+    background-color: var(--icons-bg);
+    border-radius: 50%;
+    padding: 8px;
+  }
+  
+  .sub-menu-link span {
+    font-size: 22px;
+    transition: transform 0.5s;
+  }
+  
+  .sub-menu-link:hover span {
+    transform: translateX(5px);
+  }
+  
+  .sub-menu-link:hover p {
+    font-weight: 600;
+  }
+  
